@@ -303,11 +303,11 @@ With all that in place, you can focus on the React bits, which are fetched after
 
 Since you are using webpack to assemble things, go ahead and fetch the modules you need:
 
-.src/main/js/app.js
+.src/main/js/App.js
 ====
 [source,javascript,indent=0]
 ----
-include::src/main/js/app.js[tag=vars]
+include::src/main/js/App.js[tag=vars]
 ----
 
 <1> `React` is one of the main libraries from Facebook used to build this app.
@@ -323,11 +323,11 @@ React is based on defining components. Often, one component can hold multiple in
 
 To start things off, it is very handy to have a top level container for all components. (This will become more evident as you expand upon the code throughout this series.) Right now, you only have the employee list. But you might need some other related components later on, so start with the following:
 
-.src/main/js/app.js - App component
+.src/main/js/App.js - App component
 ====
 [source,javascript,indent=0]
 ----
-include::src/main/js/app.js[tag=app]
+include::src/main/js/App.js[tag=app]
 ----
 
 <1> `class App extends React.Component{...}` is the method that creates a React component.
@@ -358,11 +358,11 @@ When the state is updated, the `render()` function is invoked by the framework. 
 
 The following listing shows the definition for an `EmployeeList`:
 
-.src/main/js/app.js - EmployeeList component
+.src/main/js/App.js - EmployeeList component
 ====
 [source,javascript,indent=0]
 ----
-include::src/main/js/app.js[tag=employee-list]
+include::src/main/js/App.js[tag=employee-list]
 ----
 ====
 
@@ -410,11 +410,11 @@ Worried about mixing logic with your structure? React's APIs encourage nice, dec
 
 Next, you need to actually define what an `<Employee />` is, as follows:
 
-.src/main/js/app.js - Employee component
+.src/main/js/App.js - Employee component
 ====
 [source,javascript,indent=0]
 ----
-include::src/main/js/app.js[tag=employee]
+include::src/main/js/App.js[tag=employee]
 ----
 ====
 
@@ -424,11 +424,11 @@ Because this component does not manage any state nor deal with user input, there
 
 The last step is to render the whole thing, as follows:
 
-.src/main/js/app.js - rendering code
+.src/main/js/App.js - rendering code
 ====
 [source,javascript,indent=0]
 ----
-include::src/main/js/app.js[tag=render]
+include::src/main/js/App.js[tag=render]
 ----
 ====
 

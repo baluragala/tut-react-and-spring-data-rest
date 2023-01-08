@@ -34,7 +34,7 @@ In the <<react-and-spring-data-rest-part-2,previous section>>, you used the coll
 
 In this version, `loadFromServer` is updated to fetch the collection. Then you can use the URIs to retrieve each individual resource:
 
-.src/main/js/app.js - Fetching each resource
+.src/main/js/App.js - Fetching each resource
 ====
 [source,javascript,indent=0]
 ----
@@ -60,7 +60,7 @@ This chain is implemented in other places as well. For example, `onNavigate()` (
 
 In this section, you are adding an `UpdateDialog` React component to edit existing employee records:
 
-.src/main/js/app.js - UpdateDialog component
+.src/main/js/App.js - UpdateDialog component
 ====
 [source,javascript,indent=0]
 ----
@@ -90,7 +90,7 @@ After the input values are extracted and loaded into the `updatedEmployee` objec
 
 So you have gone to all this effort to embed versioning in the data model. Spring Data REST has served up that value as an ETag response header. Here is where you get to put it to good use:
 
-.src/main/js/app.js - onUpdate function
+.src/main/js/App.js - onUpdate function
 ====
 [source,javascript,indent=0]
 ----
@@ -108,7 +108,7 @@ With your `UpdateDialog` React component defined and nicely linked to the top-le
 
 The `CreateDialog` created in the previous section was put at the top of the `EmployeeList` because there is only one instance. However, `UpdateDialog` is tied directly to specific employees. So you can see it plugged in below in the `Employee` React component:
 
-.src/main/js/app.js - Employee with UpdateDialog
+.src/main/js/App.js - Employee with UpdateDialog
 ====
 [source,javascript,indent=0]
 ----
